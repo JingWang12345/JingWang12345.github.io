@@ -1,39 +1,75 @@
-/* *{
-margin: 0;
-padding: 0;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-body{
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(241, 221, 238);
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 100vh 100vh 100vh 100vh;
+    grid-template-areas:
+        "header"
+        "section1"
+        "section2"
+        "footer";
+}
+header {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: rgb(241,221,238);
-}
-.shell{
+   }
+
+.shell {
     position: relative;
-    width: 70%;
+    width: 100%;
     padding: 50px;
 }
-h2{
+
+h2 {
     color: rgb(123, 150, 241);
     font-size: 90px;
     margin-left: 400px;
     font: 500 80px;
 }
-p{
+
+p {
     color: rgb(98, 98, 98);
     font-size: 22px;
     text-align: justify;
 }
-.left{
+
+.left {
     height: 500px;
     float: left;
     shape-margin: 20px;
     shape-outside: url(assets/tl.webp);
 }
-.right{
+
+.right {
     height: 500px;
     float: right;
-    shape-outside: url(assets/1tl.webp); 
+    shape-outside: url(assets/1tl.webp);
     margin: 240px -80px 0 0;
-} */
+}
+
+
+
+
+.second-page {
+    position: relative;
+    width: 100%;
+    padding: 50px;
+}
+h3 {
+    color: rgb(123, 150, 241);
+    font-size: 90px;
+    margin-left: 400px;
+    font: 500 80px;
+}
